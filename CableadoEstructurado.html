@@ -54,7 +54,7 @@
 
             </div>
         </div>
-        <div class="imagenCabezera">
+        <div class="imagenCabezera aniStart  setVisible">
             <picture>
                 <source srcset="./img/Cableado-02.png" media="screen and (min-width: 320px) and (max-width: 768px)">
                 <img src="./img/BANNER_CABLEADO_ESTRUCTURADO.jpg" alt='CABLEADO REDES' title='Cableado estructurado'
@@ -63,7 +63,7 @@
         </div>
 
         <div class="div2">
-            <div class="div2_left">
+            <div class="div2_left aniStart  setVisible">
                 <h1>Servicios de Cableado prestados por Baymanet.</h1>
                 <br>
 
@@ -75,7 +75,7 @@
                     Además, evaluamos el estado de su red actual, entregando un informe de la auditoría realizada.</p>
             </div>
 
-            <div class="div2_right">
+            <div class="div2_right aniStart  setVisible">
                 <div>
                     <img src="./img/diagramaCableado.png" alt="">
                 </div>
@@ -84,7 +84,7 @@
         </div>
 
 
-        <img src="./img/LogoSinFondo.png" alt="" class="logoHeader">
+        <img src="./img/LogoSinFondo.png" alt="" class="logoHeader aniStart  setVisible">
 
 
 
@@ -93,24 +93,27 @@
 
 
     <main>
-        <section class="inversionSegura">
+
+        <section class="inversionSegura aniStart  setVisible">
 
             <div>
                 <h2>Una inversión segura</h2>
             </div>
 
-            <div>
+            <div class="inve_cont_p">
                 <div>
                     <p>La calidad de la infraestructura de cableado y data center se ha convertido en el pilar que
                         sustenta las inversiones en tecnología de la información y comunicaciones de las organizaciones.
                     </p>
                 </div>
+                <br>
                 <div>
                     <p>Brindamos soluciones de cableado estructurado, energía segura y data center, desde la etapa de
                         diseño hasta la
                         instalación, certificación y validación.
                     </p>
                 </div>
+                <br>
                 <div>
                     <p>Nos apoyamos en marcas de primera línea en la industria y brindamos garantías durante la vida
                         útil las instalaciones.
@@ -119,6 +122,89 @@
             </div>
 
         </section>
+
+        <footer class="contactos">
+
+
+            <div class="div15">
+
+                <div>
+                    <h3 class="aniStart  setVisible">Contactos:</h3>
+                </div>
+
+                <a type="button" target="_blank" title="Whatsapp"
+                    onclick="window.open('https://api.whatsapp.com/send?phone=59898636601&text=Hola,%20Quiero%20más%20%20información%20de%20%20los%20servicios%20ofrecidos%20por%20BAYMANET.')">
+                    <button class="buttonGreenClear ">
+                        Whatapps
+                    </button>
+                </a>
+
+                <div>
+                    <br>
+                    <div class="containerIcon">
+
+                        <a type="button" href="mailto: baymaneti@gmail.com" title="Envíar correo" target="_blank">
+                            <div class="lazy iconHover" id="9"></div>
+                        </a>
+
+
+                        <a href="https://goo.gl/maps/A4W35E9qxZDx12ee8" title="Ir a la ubicación" target="_blank">
+                            <div class="lazy iconHover" id="10"></div>
+                        </a>
+
+
+                        <a href="tel:+598 93 308 288" target="_blank" title="LLamar">
+
+                            <div class="lazy iconHover" id="11"></div>
+                        </a>
+
+
+                    </div>
+                    <hr />
+                    <br>
+                    <div>
+                        <p class="aniStart  setVisible">SERGIO ZAPATA</p>
+                        <p class="aniStart  setVisible">598 98 636 601</p>
+                        <p class="aniStart  setVisible">baymaneti@gmail.com</p>
+                        <br>
+                        <hr /><br>
+                        <p>Montevideo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div16 ">
+                <div class="div16_1">
+
+                    <div class="aniStart  setVisible">
+                        <picture>
+                            <source srcset="./img/LetraBaymanetSmall.png"
+                                media="screen and (min-width: 320px) and (max-width: 768px)">
+                            <img src="./img/LetraBaymanetBig.png" alt='Logo Baymanet' title='Logo Baymanet'
+                                loading='lazy'>
+                        </picture>
+                    </div>
+
+                </div>
+
+                <div class="div16_2"></div>
+                <img src="./img/VectorLogo.png" class='VectorLogo' alt='titulo empresa Baymanet'
+                    title='titulo empresa Baymanet' loading='lazy'>
+
+            </div>
+
+            <div class="contactosCreateBy">
+
+                <div class="iconoSoyunaWeb">
+                    <img src="./img/LogoSoyUnaWeb32X32.png" alt='creado por' title='creado por' loading='lazy'>
+                </div>
+                <div>
+                    <p>Create by : bmsebastian2@gmail.com</p>
+                </div>
+            </div>
+
+        </footer>
+
     </main>
 
 
@@ -128,22 +214,7 @@
 
 
 
-    <script>
-
-        // selector
-        var menu = document.querySelector(".hamburger");
-
-        // method
-        function toggleMenu(event) {
-            this.classList.toggle("is-active");
-            document.querySelector(".menuppal").classList.toggle("is_active");
-            event.preventDefault();
-        }
-
-        // event
-        menu.addEventListener("click", toggleMenu, false);
-
-    </script>
+    <script src="/app.js"></script>
 </body>
 
 </html>

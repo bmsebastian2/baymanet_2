@@ -14,7 +14,7 @@
     list-style: none;
     list-style-type: none;
     text-decoration: none;
-    color: black;
+    color: var(--gray-dark);
 }
 
 
@@ -29,6 +29,28 @@ body {
 
 }
 
+.setVisible {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+}
+
+.offVisible {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.buttonGreenClear {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+    border-radius: 1rem;
+    background-color: var(--green-clear);
+
+}
+
+.buttonGreenClear:hover {
+    animation: myAnim 1.2s ease 0s 1 normal forwards;
+}
 
 header {
     display: flex;
@@ -104,6 +126,8 @@ span {
     align-items: center;
     padding: 1rem;
     text-align: center;
+
+
 }
 
 .div2_right {
@@ -123,9 +147,10 @@ h1 {
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
-    /* or 200% */
     text-align: center;
     letter-spacing: -0.015em;
+    color: var(--gray-dark);
+
 }
 
 .div2_right {
@@ -140,18 +165,28 @@ h1 {
     justify-content: center;
     text-align: center;
     padding: 2rem;
+
 }
 
 .inversionSegura h2 {
     color: var(--green-dark);
     margin-bottom: 2.5rem;
-
-
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
 
 }
 
+.inve_cont_p {
+    padding: 4rem;
+}
+
+
+
 .inversionSegura p {
     margin-bottom: 0.5rem;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.8rem);
+    text-align: justify;
+
+    color: var(--gray-dark);
 
 }
 
@@ -182,6 +217,124 @@ a:hover {
 }
 
 
+
+/* FOOTER */
+.contactos {
+    min-height: 95vh;
+    background-color: var(--gray-dark);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.div15 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerIcon {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.contactos h3, p {
+    color: var(--white-dark);
+    text-align: center;
+}
+
+.contactos h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+    text-align: center;
+}
+
+.div15 h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+hr {
+    opacity: 15%;
+}
+
+.div16 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.div16_1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.div16_2 {
+    flex: 2;
+    z-index: 5;
+}
+
+.VectorLogo {
+    position: absolute;
+    left: 20rem;
+    top: 5rem;
+}
+
+.contactosCreateBy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    min-height: 20vh;
+    width: 100%;
+    margin-top: 29rem;
+    opacity: 50%;
+    top: -9rem;
+
+}
+
+.visible9 {
+    width: 50px;
+    height: 50px;
+    background: url(/img/css_sprites.png)-10px -10px;
+    filter: invert(100%);
+    margin: 1rem;
+}
+
+.visible10 {
+    width: 50px;
+    height: 50px;
+    background: url(/img/css_sprites.png) -80px -10px;
+    filter: invert(100%);
+    margin: 1rem;
+}
+
+.visible11 {
+    width: 33px;
+    height: 50px;
+    background: url(/img//css_sprites.png) -10px -80px;
+    filter: invert(100%);
+    margin: 1rem;
+}
+
+.iconHover:hover {
+    animation: myAnim 1.2s ease 0s 1 normal forwards;
+}
+
+/* FOOTER */
 
 
 
@@ -246,15 +399,90 @@ a:hover {
         text-align: justify;
     }
 
+    .inversionSegura h2 {
+        margin-bottom: 0;
+
+    }
+
+    .inve_cont_p {
+        padding: 0.5rem;
+    }
+
     h1 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
 
     }
 
+    /* FOOTER */
+    .contactos {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div16 {
+        justify-content: flex-start;
+    }
+
+    .div16_1 {
+        align-items: flex-start;
+    }
+
+    .containerIcon {
+        margin: 0.5rem;
+    }
+
+    .contactosCreateBy {
+        padding: 1rem;
+        min-height: 40vh;
+        width: 100%;
+        margin-top: 19rem;
+        z-index: 1000;
+        top: 0;
+    }
+
+    .contactosCreateBy p {
+        font-size: 0.7rem;
+    }
+
+    .VectorLogo {
+        left: 10rem;
+        top: -8rem;
+    }
+
+    .iconoSoyunaWeb {
+        display: none;
+    }
+
+    /* FOOTER */
+
 }
 
+@media (min-width: 1199.98px) {
 
+
+    /* FOOTER */
+    .contactosCreateBy {
+        min-height: 40vh;
+        margin-top: 30rem;
+    }
+
+    .VectorLogo {
+        left: 25rem;
+        top: 25rem;
+    }
+
+    .div16_1 {
+        align-items: flex-end;
+
+    }
+
+    /* FOOTER */
+
+
+
+}
 
 .hamburger {
     position: fixed;
@@ -367,4 +595,34 @@ a:hover {
 .menuppal ul li a:hover {
     text-decoration: none;
     color: #333;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
 }
