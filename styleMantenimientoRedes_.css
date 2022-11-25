@@ -103,6 +103,7 @@ header {
     backdrop-filter: blur(0.1rem);
     padding: 1.2rem;
     clip-path: polygon(0 0, 88% 0, 100% 16%, 100% 100%, 0 100%, 0% 50%);
+    border-bottom: 13px solid #fcaf4a;
 
 }
 
@@ -114,7 +115,8 @@ header {
 }
 
 .superBanner_parrafo {
-    background-color: var(--blue-sky);
+    /* background-color: var(--blue-sky); */
+    background: linear-gradient(220.55deg, #C5EDF5 0%, #4A879A 100%);
     padding: 1rem 2rem 1rem 2rem;
     /* border: 3px solid peru; */
     width: 100%;
@@ -127,16 +129,11 @@ header {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
-    /* font-size: 86px; */
     font-size: clamp(2rem, -0.875rem + 8.333vw, 4.5rem);
     line-height: 104px;
-    /* identical to box height */
-
     letter-spacing: -0.09em;
     word-spacing: 1rem;
-
-    color: #000000;
-
+    color: var(--gray-dark)
 }
 
 .superBanner_parrafo p {
@@ -236,8 +233,15 @@ h1 {
 
 }
 
+h2 {
+    color: var(--blue-sky) !important;
+    font-size: 2rem;
+}
+
 .inversionSegura h2 {
-    color: var(--green-dark);
+
+
+
     margin-bottom: 2.5rem;
     font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
 
@@ -412,6 +416,11 @@ hr {
         margin-top: 3rem;
     }
 
+    h2 {
+
+        font-size: 1.5rem;
+    }
+
     .superBanner {
         width: 100vw;
         left: 0rem;
@@ -495,9 +504,13 @@ hr {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
 
+    }
+
+    h2 {
+        color: var(--blue-sky) !important;
     }
 
     /* FOOTER */
