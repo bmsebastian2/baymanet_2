@@ -925,4 +925,20 @@ hr {
     .container_one_right {
         flex: 2;
     }
+
+    .left_parrafo_second {
+        text-align: left;
+    }
+
+    .left_parrafo {
+
+        text-align: left;
+
+
+    }
+
+    .lineRed {
+        margin-left: 0;
+
+    }
 }

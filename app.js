@@ -19,7 +19,6 @@ objAnimados.forEach((e) => observador.observe(e));
 document.addEventListener("DOMContentLoaded", function () {
   var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
 
-
   if ("IntersectionObserver" in window) {
     let lazyBackgroundObserver = new IntersectionObserver(function (
       entries,
@@ -51,3 +50,5 @@ function toggleMenu(event) {
 
 // event
 menu.addEventListener("click", toggleMenu, false);
+
+
