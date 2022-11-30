@@ -172,7 +172,6 @@ a:hover {
     text-align: justify;
 }
 
-
 .quehacemos p,
 .quienesomos h2 {
     align-items: center;
@@ -200,8 +199,6 @@ a:hover {
 .div4 {
     align-items: center;
 }
-
-
 
 .quehacemos {
     padding: 5rem;
@@ -630,8 +627,6 @@ h5 {
         height: 75vh;
         padding: 0.2rem 2rem;
         justify-content: center;
-
-
     }
 
     .quienesomos p {
