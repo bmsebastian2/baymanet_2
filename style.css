@@ -144,12 +144,13 @@ a:hover {
     height: 60vh;
 }
 
+/* 
 .buttonGreenClear {
     font-size: 1.3rem;
     padding: 0.6rem 1.6rem;
     border-radius: 1rem;
     background-color: var(--green-clear);
-}
+} */
 
 .buttonGreenClear:hover,
 .iconHover:hover {
@@ -626,7 +627,7 @@ h5 {
     }
 
     .quienesomos {
-        height: 65vh;
+        height: 75vh;
         padding: 0.2rem 2rem;
         justify-content: center;
 
