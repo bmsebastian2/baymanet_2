@@ -548,7 +548,7 @@ hr {
 
 .containerHeroe p {
     line-height: 2rem;
-    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.2rem);
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.4rem);
 }
 
 .crystal p,
